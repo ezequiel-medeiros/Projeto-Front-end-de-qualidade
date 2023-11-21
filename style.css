@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vp;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+/* Configurando link (a) */
+
+a:hover {
+    background-color:#006d75 ;
+    color: #F6F6F6;
+}
+
+/* Configurando ID */
+
+#container {
+    margin: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Configurando Class */
+
+.strong { 
+    color: #00ffff;
+}
+
+.container-conteudo {
+    width: 615px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+    
+.titulo {
+    font-size: 36px;
+    font-family:'Krona One', sans-serif;
+}
+
+.paragrafo {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    background-color: #00ffff;
+    width: 280px;
+    padding: 21.5px 0;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 30px;
+}
+
+.imagem {
+    border: 0.4em solid #00ffff;
+    border-radius: 15px;
+    max-width: 330px;
+}
+
+/* Alterando Estilização em diferentes telas */
+
+/* Telas acima de 1400px */
+@media screen and (min-width: 1400px) {
+    #container {
+        margin: 12% 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .imagem {
+        border: 0.4em solid #00ffff;
+        border-radius: 15px;
+        max-width: 350px;
+    }
+}
+/*
+@media screen and (max-width: 600px) {
+    #container {
+        margin: 2% 3%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .imagem {
+        border: 0.4em solid #00ffff;
+        border-radius: 15px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .container-conteudo {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .paragrafo {
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .titulo {
+        font-size: 26px;
+        font-family:'Krona One', sans-serif;
+    }
+    
+    .botoes {
+        background-color: #00ffff;
+        width: 80px;
+        padding: 21.5px 0;
+        text-align: center;
+        border-radius: 16px;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #000000;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .div-imagem {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+*/
