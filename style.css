@@ -93,7 +93,8 @@ a:hover {
         max-width: 350px;
     }
 }
-/*
+
+/* Telas de celulares e Tablets */
 @media screen and (max-width: 800px) {
     #container {
         margin: 2% 3%;
@@ -142,4 +143,3 @@ a:hover {
         flex-wrap: wrap;
     }
 }
-*/
