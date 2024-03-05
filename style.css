@@ -6,6 +6,7 @@
 }
 
 body {
+    margin: -150px;
     height: 100vp;
     box-sizing: border-box;
     background-color: #000000;
@@ -15,7 +16,7 @@ body {
 /* Configurando link (a) */
 
 a:hover {
-    background-color:#006d75 ;
+    background-color:#006d75;
     color: #F6F6F6;
 }
 
@@ -29,6 +30,12 @@ a:hover {
 }
 
 /* Configurando Class */
+
+.centralizacao-h2 {
+    padding: 0 15px 0 0;
+    font-family: 'Krona One', 'sans-serif';
+    font-weight: 400;
+}
 
 .strong { 
     color: #00ffff;
@@ -53,26 +60,31 @@ a:hover {
 
 .links {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    padding: 0 0 0 100px;
 }
 
 .botoes {
-    background-color: #00ffff;
-    width: 280px;
+    /* background-color: #00ffff; */
+    width: 378px;
     padding: 21.5px 0;
     text-align: center;
-    border-radius: 16px;
+    border: 2px solid #00ffff;
+    border-radius: 8px;
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
-    color: #000000;
+    color: #F6F6F6;
     font-family: 'Montserrat', sans-serif;
     margin-right: 30px;
 }
 
 .imagem {
     border: 0.4em solid #00ffff;
-    border-radius: 15px;
+    border-radius: 10px;
     max-width: 330px;
 }
 
@@ -90,7 +102,28 @@ a:hover {
     .imagem {
         border: 0.4em solid #00ffff;
         border-radius: 15px;
-        max-width: 350px;
+        max-width: 450px;
+    }
+}
+
+/* Telas acima de 1400px */
+@media screen and (min-width: 801px) and  (max-width: 1400px) {
+
+    body{ 
+        
+    }
+
+    #container {
+        margin: 12% 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .imagem {
+        border: 0.4em solid #00ffff;
+        border-radius: 15px;
+        max-width: 300px;
     }
 }
 
