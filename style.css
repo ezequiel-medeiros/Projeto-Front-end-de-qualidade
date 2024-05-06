@@ -69,6 +69,9 @@ a:hover {
 
 .botoes {
     /* background-color: #00ffff; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     width: 378px;
     padding: 21.5px 0;
     text-align: center;
